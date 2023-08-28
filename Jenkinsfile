@@ -21,7 +21,7 @@ pipeline {
         stage('Push image to hub'){
             steps{
                 script{
-                    withCredentials([string(credentialsId: 'BIGtree@97', variable: 'BIGtree@97')]) {
+                     {
                     sh 'docker login -u pravarakhya -p BIGtree@97'
                         
                     }
